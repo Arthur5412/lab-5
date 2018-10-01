@@ -67,7 +67,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(testArray) { //eslint-disable-line
     var addArray = sum(testArray[0],testArray[1])[0];
     var arrayTotal = sum(addArray,testArray[2])[0];
     return [arrayTotal, testArray + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.'];
@@ -87,7 +87,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(testArray) { //eslint-disable-line
     console.log(testArray);
     var timesArray = multiply(testArray[0],testArray[1])[0];
     var arrayTotal = multiply(timesArray,testArray[2])[0];
