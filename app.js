@@ -49,7 +49,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     var inceptionTwo = multiply(a,b)[0];
     var multiplyTotal = multiply(inceptionTwo,c)[0];
     return [sumTotal, multiplyTotal, a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyTotal + '.'];
-    
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -67,8 +67,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
-
+function sumArray(testArray) { //eslint-disable-line
+    var addArray = sum(testArray[0],testArray[1])[0];
+    var arrayTotal = sum(addArray,testArray[2])[0];
+    return [arrayTotal, testArray + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -85,8 +87,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(testArray) { //eslint-disable-line
+    console.log(testArray);
+    var timesArray = multiply(testArray[0],testArray[1])[0];
+    var arrayTotal = multiply(timesArray,testArray[2])[0];
+    console.log(testArray);
+    return [arrayTotal, 'The numbers ' + testArray + ' have a product of ' + arrayTotal + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
