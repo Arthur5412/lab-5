@@ -49,7 +49,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     var inceptionTwo = multiply(a,b)[0];
     var multiplyTotal = multiply(inceptionTwo,c)[0];
     return [sumTotal, multiplyTotal, a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyTotal + '.'];
-    
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -68,7 +68,9 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    var addArray = sum(testArray[0],testArray[1])[0];
+    var arrayTotal = sum(addArray,testArray[2])[0];
+    return [arrayTotal, testArray + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
